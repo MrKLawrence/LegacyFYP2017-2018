@@ -1,6 +1,6 @@
 # fyp201801
 
-## MOTIVATION
+## Movitation
 
 Legacy code of Final Year Project - People Sensing Analytics on Internet of Things
 
