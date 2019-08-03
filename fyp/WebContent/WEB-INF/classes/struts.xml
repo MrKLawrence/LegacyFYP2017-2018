@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="fyp" extends="struts-default, json-default">
+		<action name="databaseConnection" class="fyp.Application"
+			method="execute">
+			<result name="success" type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="oui" class="fyp.OUIAction" method="execute">
+			<result name="success" type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="prepareStores" class="fyp.StoreListAction" method="execute">
+			<result name="success" type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="prepareMall" class="fyp.MallListAction" method="execute">
+			<result name="success" type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="heatmap" class="fyp.HeatMapAction" method="execute">
+			<result name="success" type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+		<action name="prepareFloorPlanImage" class="fyp.FloorPlanImageAction" method="execute">
+			<result name="success" type="json">
+				<param name="root">dataMap</param>
+			</result>
+		</action>
+	</package>
+</struts>
